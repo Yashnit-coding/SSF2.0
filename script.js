@@ -4,17 +4,16 @@
 
   /* Products. Put each photo in images/products/ using the file name below (4:3, about 1200 x 900). */
   var PRODUCTS = [
-    { n: '2 Door Steel Almirah', c: 'Steel Furniture', d: 'A practical two door steel almirah for everyday storage.', i: '2-door-steel-almirah.jpg' },
-    { n: '3 Door Steel Almirah', c: 'Steel Furniture', d: 'A three door steel almirah with more storage space.', i: '3-door-steel-almirah.jpg' },
-    { n: 'Mirror Almirah', c: 'Steel Furniture', d: 'Steel almirah with a mirror, suitable for bedrooms.', i: 'mirror-almirah.jpg' },
-    { n: 'Office Almirah', c: 'Steel Furniture', d: 'Steel almirah for files, records and office storage.', i: 'office-almirah.jpg' },
-    { n: 'Locker Almirah', c: 'Steel Furniture', d: 'Steel almirah with locker storage for valuables and documents.', i: 'locker-almirah.jpg' },
-    { n: 'Custom Steel Almirah', c: 'Steel Furniture', d: 'Made to your requirement. Tell us what you need.', i: 'custom-almirah.jpg', custom: true },
-    { n: 'Desert Cooler', c: 'Air Coolers', d: 'Air cooler for larger rooms and hot, dry weather.', i: 'desert-cooler.jpg' },
-    { n: 'Personal Cooler', c: 'Air Coolers', d: 'Compact air cooler for personal and small-room use.', i: 'personal-cooler.jpg' },
-    { n: 'Tower Cooler', c: 'Air Coolers', d: 'Slim tower air cooler that saves floor space.', i: 'tower-cooler.jpg' },
-    { n: 'Industrial Cooler', c: 'Air Coolers', d: 'Air cooler for workshops and industrial spaces.', i: 'industrial-cooler.jpg' },
-    { n: 'Commercial Cooler', c: 'Air Coolers', d: 'Air cooler for shops, halls and commercial spaces.', i: 'commercial-cooler.jpg' }
+    { n: '2 Door Steel Almirah', c: 'Steel Furniture', d: 'A practical two door steel almirah for everyday storage.', i: '2-door-steel-almirah.png' },
+    { n: '3 Door Steel Almirah', c: 'Steel Furniture', d: 'A three door steel almirah with more storage space.', i: '3-door-steel-almirah.png' },
+    { n: 'Mirror Almirah', c: 'Steel Furniture', d: 'Steel almirah with a mirror, suitable for bedrooms.', i: 'mirror-almirah.png' },
+    { n: 'Office Almirah', c: 'Steel Furniture', d: 'Steel almirah for files, records and office storage.', i: 'office-almirah.png' },
+    { n: 'Locker Almirah', c: 'Steel Furniture', d: 'Steel almirah with locker storage for valuables and documents.', i: 'locker-almirah.png' },
+    { n: 'Custom Steel Almirah', c: 'Steel Furniture', d: 'Made to your requirement. Tell us what you need.', i: 'custom-almirah.png', custom: true },
+    { n: 'Desert Cooler', c: 'Air Coolers', d: 'Air cooler for larger rooms and hot, dry weather.', i: 'desert-cooler.png' },
+    { n: 'Personal Cooler', c: 'Air Coolers', d: 'Compact air cooler for personal and small-room use.', i: 'personal-cooler.png' },
+    { n: 'Tower Cooler', c: 'Air Coolers', d: 'Slim tower air cooler that saves floor space.', i: 'tower-cooler.png' },
+  
   ];
   var PRODUCT_DIR = 'images/products/';
 
@@ -76,7 +75,7 @@
   $('clear').onclick = clearAll; $('clear2').onclick = clearAll;
   document.querySelectorAll('[data-go]').forEach(function (a) { a.addEventListener('click', function () { setCat(a.dataset.go); }); });
   render();
-  $('fpr').innerHTML = '<option value="">Select a product</option>' + PRODUCTS.map(function (p) { return '<option>' + esc(p.n) + '</option>'; }).join('') + '<option>Wholesale / retailer enquiry</option><option>Other / Not sure</option>';
+  $('fpr').innerHTML = '<option value="">Select a product</option>' + PRODUCTS.map(function (p) { return '<option>' + esc(p.n) + '</option>'; }).join('') + '<option>Other / Not sure</option>';
 
   /* Menu */
   var menu = $('menu'), burger = $('burger');
