@@ -159,6 +159,24 @@ nav .btn{padding:9px 18px;margin-left:10px}
 .why-i:hover{transform:translateY(-6px);border-bottom-color:var(--ember);box-shadow:0 20px 30px -14px rgba(232,72,28,.55)}.why-i:hover h3{color:var(--red)}
 .why:hover .why-i:not(:hover){opacity:.62}
 
+/* Wholesale */
+.wdeal{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:center;margin-top:34px}
+.deal-art{position:relative;padding:38px 30px 22px;background:var(--corners),radial-gradient(circle at 50% 115%,rgba(232,72,28,.5),transparent 62%),linear-gradient(145deg,#2b2122,#170F10);border:1px solid #4a4243;border-top:3px solid var(--ember);box-shadow:0 24px 40px -18px rgba(0,0,0,.7)}
+.deal-art svg{display:block;width:100%;height:auto}
+.gear{transform-box:fill-box;transform-origin:center;transition:transform 1.4s}.deal-art:hover .gear{transform:rotate(120deg)}.deal-art:hover .gear.b{transform:rotate(-120deg)}
+.wdeal h3{font-size:2.2rem;text-transform:uppercase;color:var(--bean)}
+.wdeal .lead{max-width:none;font-size:1.15rem}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.tags span{padding:7px 14px;background:linear-gradient(#f4f2f2,#cfcbcb);border:1px solid #8d8888;border-bottom:3px solid var(--red);font-weight:600;font-size:.95rem;color:var(--bean)}
+.why.w4{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.steps-h{margin:52px 0 18px;font-size:2rem;text-transform:uppercase;color:var(--bean)}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.step{position:relative;display:flex;align-items:center;gap:20px;padding:30px 26px;background:var(--corners),linear-gradient(145deg,#2b2122,#170F10);color:var(--alab);border:1px solid #4a4243;border-top:3px solid var(--ember);box-shadow:0 14px 26px -16px rgba(0,0,0,.8);transition:transform .25s,box-shadow .25s}
+.step b{flex:none;font:900 3.6rem var(--display);line-height:.9;color:var(--glow);text-shadow:0 0 18px rgba(232,72,28,.6)}
+.step span{font-size:1.05rem}
+.step:hover{transform:translateY(-4px);box-shadow:0 20px 32px -14px rgba(232,72,28,.55)}
+#wholesale .actions{margin-top:34px}
+
 /* Gallery and reviews */
 .gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px;margin-top:26px}
 .gal button{padding:0;border:4px solid transparent;border-image:var(--steel-line) 1;background:#2a2021;cursor:zoom-in;aspect-ratio:4/3;overflow:hidden;transition:transform .25s,box-shadow .25s}
@@ -215,6 +233,7 @@ dialog button:hover{background:linear-gradient(#f0592a,#b8300e)}
 #lbx{top:16px;right:8px;z-index:2}#lbp{left:8px;top:50%}#lbn{right:8px;top:50%}
 
 @media(max-width:880px){
+  .steps,.wdeal{grid-template-columns:1fr}.wdeal{gap:28px}
   .burger{display:block}
   nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--bean);flex-direction:column;align-items:stretch;padding:12px 20px 20px;border-bottom:3px solid var(--ember)}
   nav.open{display:flex}nav .btn{margin:10px 0 0}
