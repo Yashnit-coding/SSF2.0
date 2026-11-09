@@ -137,7 +137,7 @@
     var via = ev.submitter && ev.submitter.value === 'mail' ? 'mail' : 'wa';
     var msg = 'Hello Saggu Steel Furniture, I would like to make an enquiry.\nName: ' + $('fn').value.trim() + '\nPhone: ' + ph + ($('fe').value ? '\nEmail: ' + $('fe').value.trim() : '') + '\nProduct: ' + $('fpr').value + '\nMessage: ' + $('fm').value.trim();
     busy = true; form.querySelectorAll('.sendrow .btn').forEach(function (b) { b.disabled = true; });
-    if (via === 'mail') { window.location.href = 'mailto:yashnitsingh000@gmail.com?subject=' + encodeURIComponent('Enquiry: ' + $('fpr').value) + '&body=' + encodeURIComponent(msg); }
+    if (via === 'mail') { window.location.href = 'mailto:saggusteelfurniture@gmail.com?subject=' + encodeURIComponent('Enquiry: ' + $('fpr').value) + '&body=' + encodeURIComponent(msg); }
     else { window.open(waLink(msg), '_blank', 'noopener'); }
     $('status').className = 'status ok';
     $('status').textContent = (via === 'mail' ? 'Your email app has opened with your details. ' : 'WhatsApp has opened with your details. ') + 'Please press Send there to submit your enquiry. If nothing opened, use the Call Now or WhatsApp Us button above.';
